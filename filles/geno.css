@@ -1,0 +1,881 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;900&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&family=Poppins:wght@600&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+html{
+  scroll-behavior: smooth;
+}
+
+.land-container{
+  background-image: url('madia/Pink\ and\ Brown\ Minimalist\ Beauty\ Salon\ &\ Spa\ Presentation\ \(6\).png');
+  background-repeat: no-repeat;
+  background-size: cover;
+ height:100vh;
+}
+a{
+  text-decoration: none;
+  color:rgb(42, 42, 42);
+  font-size:1rem;
+}
+a:hover{
+  color:#02afce;
+}
+  
+li{
+  list-style:none;
+}
+nav{
+  position: relative;
+  padding: 0 2rem;
+}
+.navbar{
+  width:100%;
+  height:60px;
+  max-width:1200px;
+  margin:0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.navbar .links{
+  display: flex;
+  gap: 2rem;
+}
+.navbar .toggle-btn{
+  color:#fff;
+  font-size: 1.5rem;
+display: none;
+  
+  
+  cursor: pointer;
+  
+}
+.action-btn{
+  background-color: #0097b2;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.action-btn:hover{
+  scale: 0.95;
+  color: white;
+  
+}
+.dropdown_menu{
+  position:absolute;
+  right:2rem;
+  top:60px;
+  width:300px;
+  background-color: rgb(255, 255, 255,0.1);
+  overflow: hidden;
+  backdrop-filter:blur(15px);
+  border-radius :10px;
+ display: none;
+ height:0;
+  transition: height 0.2s cubic-bezier(0.175,0.885,0.32,1.275);
+}
+.open{
+height:240px;
+width:100%;
+
+}
+.dropdown_menu li{
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown_menu .action-btn{
+  width:100%;
+  display: flex;
+  justify-content: center;
+
+}
+.text-landpage{
+    font-family: 'Poppins', sans-serif;
+  width:35%;
+  justify-content: center;
+  text-align: center;
+ margin-left:5%;
+  margin-top:15%;
+  font-size: larger;
+color: rgb(59, 59, 59);
+
+}
+.buttun_rgistr {
+    width: 180px;
+    font-size: 19px;
+    font-weight: 600;
+    color: #f3efef;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+  
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .buttun_rgistr:hover {
+    background-position: 100% 0;
+ 
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    color: rgb(37, 36, 36);
+
+    
+  }
+  
+  .buttun_rgistr:focus {
+    outline: none;
+  }
+  
+  .buttun_rgistr.buttn {
+    background-image: linear-gradient(
+      to right,
+      #0097b2,
+      #0097b2,
+      #04befe,
+      #3f86ed
+    );
+   
+  }
+  .buttun_rgistr.buttn:hover {
+    background-image: linear-gradient(
+      to right,
+      #9ac7dc,
+      #6891f1,
+      #64c6ed,
+      #6db0f2
+    );
+   
+  }
+  .about{
+    justify-content: center;
+     text-align: center;
+     width:100%;padding:30px;
+    margin-left:0%;
+ 
+    background-color: #0194ae;;
+    border-radius:0%;
+    padding: 2.5%;
+    height:400px;
+    margin-top:1px;
+ 
+  }
+  .about h3{
+    color:rgb(255, 255, 255);margin-top:9%;position: relative;font-size:x-large;font-weight:500;
+  }
+
+  #Dna-Transcription{
+    display: none;
+  }
+  #Dna-translation{
+    display: none;
+  }
+  #GC-content{
+    display: none;
+  }
+  #k-mer{
+    display: none;
+  }
+  #Reverse_Complement{
+    display: none;
+  }
+  #Stop-Coden{
+    display:none;
+  }
+  .icon_dna{
+    display: none;
+  }
+  @media (max-width:992px){
+    .navbar .links,
+    .navbar .action-btn{
+      display: none;
+    }
+    .navbar .toggle-btn{
+      display: block;
+      color: #25aae1;
+    }
+    .dropdown_menu{
+      display: block;
+    }
+    #action-btn2{
+
+      background-color: #09aacb;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border: none;
+      outline: none;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      
+      font-weight: bold;
+      cursor: pointer;
+      }
+
+  .text-landpage{
+      font-family: 'Poppins', sans-serif;
+    width:80%;
+    justify-content: center;
+    text-align: center;
+    padding-top:50px;
+    padding-bottom:300px;
+  color: rgb(59, 59, 59);
+  margin-left:30px;
+
+  align-items: center;
+ 
+  
+  }
+  .about{
+    justify-content: center;
+     text-align: center;
+     width:90%;padding:30px;
+    margin-left:5%;
+    margin-top:5%;
+    background-color: #006c7f;
+    border-radius:50%;
+    padding: 3%;
+    height:400px;
+    margin-top:30px;
+    display: block;
+
+  }
+  .about h3{
+    font-size: larger;
+    margin-top:90px;
+
+  }
+  }
+
+
+  
+.row{
+
+  color: #060606;
+  
+  display:flex;
+  text-align: center;
+  flex-wrap: wrap;
+
+margin-left:-8%;
+  padding: 2em 1em;
+  }
+  .coll{
+  
+    width: 100%;
+    border: 17px solid #0097b25d;
+border-radius:4% ;
+    padding:0.5em 0;
+  
+  }
+  .title{
+   width: 100%;
+   text-align: center;
+   font-size: 3.5em;
+   color: #1D212B;
+  
+  
+  
+  }
+  
+  
+  
+  .card { 
+     padding: 3.5em 1em;
+
+      transition:0.3s;
+      color: #090909eb;
+     
+  }
+  
+  .card .img-container {
+     width: 8em;
+     height: 8em;
+      background-color:rgba(0, 0, 0, 0.373);
+      
+      
+      padding: 0.5em; 
+      border-radius: 50%;
+       margin: 0 auto 2em auto; 
+  }
+  
+  
+  
+    .card h3{
+      font-weight:500;
+     
+  
+    }
+  
+    .card p{
+      font-weight:100;
+      font-family:'Poppins', sans-serif;
+      margin: 0.5em 0 2em 0;
+      letter-spacing: 2px;
+     
+      color: rgb(100, 100, 100);
+    }
+  
+    .icon{
+      width: 50%;
+      min-width: 180px;
+      margin: auto;
+      justify-content:space-between;
+   
+      display: flex;
+    }
+  .card a{
+    text-decoration: none;
+    justify-content:space-between;
+    color: inherit;
+    padding:20px;
+  font-size:1.7em;
+  
+  }
+  
+
+  .wrapper{
+    overflow: hidden;
+    max-width: 390px;
+  
+    background-image: linear-gradient(
+      to right,
+      #0097b2,
+      #01859c,
+      #00869d
+    
+    );
+    display: none;
+    padding: 30px;
+    padding-bottom:65px;
+    z-index:3000;
+    position: absolute;
+    top: 50%;
+    transform: translate(115%, -50%);
+    border-radius: 15px;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+    position: fixed;
+   
+    backdrop-filter:blur(50px);
+
+  }
+  .wrapper .title-text{
+    display: flex;
+    width: 200%;
+  }
+  .wrapper .title{
+  color: white;
+    width: 50%;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+  }
+  .wrapper .slide-controls{
+    position: relative;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    margin: 30px 0 10px 0;
+    justify-content: space-between;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+  }
+  .slide-controls .slide{
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 48px;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.6s ease;
+  }
+  .slide-controls label.signup{
+    color:white;
+  }
+  .slide-controls .slider-tab{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    z-index: 0;
+    border-radius: 15px;
+    background: -webkit-linear-gradient(rgb(198, 59, 59)
+  , rgb(225, 127, 127));
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+  }
+  input[type="radio"]{
+    display: none;
+  }
+  #signup:checked ~ .slider-tab{
+    left: 50%;
+  }
+  #signup:checked ~ label.signup{
+    color: #fff;
+    cursor: default;
+    user-select: none;
+  }
+  #signup:checked ~ label.login{
+    color: #ebe4e4;
+  }
+  #login:checked ~ label.signup{
+    color:white;
+  }
+  #login:checked ~ label.login{
+    cursor: default;
+    user-select: none;
+  }
+  .wrapper .form-container{
+    width: 100%;
+    overflow: hidden;
+  }
+  .form-container .form-inner{
+    display: flex;
+    width: 200%;
+  }
+  .form-container .form-inner form{
+    width: 50%;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+  }
+  .form-inner form .field{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .form-inner form .field input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 15px;
+    border-radius: 15px;
+    border: 1px solid lightgrey;
+    border-bottom-width: 2px;
+    font-size: 17px;
+    transition: all 0.3s ease;
+  }
+  .form-inner form .field input:focus{
+    border-color: #1a75ff;
+    /* box-shadow: inset 0 0 3px #fb6aae; */
+  }
+  .form-inner form .field input::placeholder{
+    color: #999;
+    transition: all 0.3s ease;
+  }
+  form .field input:focus::placeholder{
+    color: grey
+  }
+  .form-inner form .pass-link{
+    margin-top: 5px;
+  }
+  .form-inner form .signup-link{
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+  }
+  .form-inner form .pass-link a,
+  .form-inner form .signup-link a{
+color: rgb(246, 242, 242);
+    text-decoration: none;
+  }
+  .form-inner form .pass-link a:hover,
+  .form-inner form .signup-link a:hover{
+    text-decoration: underline;
+  }
+  form .btn{
+    height: 50px;
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+  }
+  form .btn .btn-layer{
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    background: -webkit-linear-gradient(right,#d37272,#ea5e5e,#e53a3a
+  , #0073e6);
+    border-radius: 15px;
+    transition: all 0.4s ease;;
+  }
+  form .btn:hover .btn-layer{
+    left: 0;
+  }
+  form .btn input[type="submit"]{
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    padding-left: 0;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+
+  .members-container{
+    background-image: url('madia/Pink\ and\ Brown\ Minimalist\ Beauty\ Salon\ &\ Spa\ Presentation\ \(8\).png');
+    background-repeat: repeat;
+    background-size: cover;
+  }
+  .choose_process{
+    justify-content: center;
+    display: flex;
+    height:90vh;
+    background-color:#0097b2c0;
+    width: 95%;
+    margin-left:2.5%;
+    margin-top:2%;
+    border-radius:10px ;
+  }
+  .choose_process h1{
+    color: white;
+    font-size:48px;
+    margin-top:10%;
+    width:50%;
+  text-align: center;
+    display: block;
+    position: absolute;
+    text-transform: capitalize;
+  }
+  .choose{
+    margin:20%;display: block;margin-left:-20% ;
+   
+  }
+  .choose form select{
+    width:40%;position:absolute;
+    height:6vh;
+    text-decoration: none;
+    border-radius: 20px;
+    border-style: none;
+    color:rgb(51, 50, 50);
+    text-align: center;
+    font-size: large;
+    text-transform:capitalize;
+  }
+  .bio-forms{
+    justify-content: center;
+    display: flex;
+    height:80vh;
+
+   
+    border: 20px solid #02afce6b;
+    width: 90%;
+    margin-left:5%;
+    margin-top:7%;
+
+  }
+  .icon_dna img{
+    scale: 0.35;
+  
+  
+  }
+  .icon_dna{
+    margin-top:-5%;
+    left:-300px;
+    z-index:500;
+    position: absolute;
+  }
+  .bio-forms form h2{
+    
+    padding:30px;
+    padding-left: 0%;
+    margin-top:5%;
+text-align: center;
+margin-left:-2%;
+  
+
+  }
+  .bio-forms form{
+    margin-top:5%;
+    margin-left:15%;
+  }
+  .bio-forms form input[type="text"] {
+    box-sizing: border-box;
+margin:2%;
+width: 888px;
+
+height: 160px;
+
+padding-left:10px;
+font-size:large;
+text-align:center;
+
+border: 4px solid #9FE8FA;
+border-radius: 16px;
+
+  }
+
+.bio-forms form input[type="submit"] {
+width:20%;
+position: absolute;
+width: 150px;
+height: 48px;
+border-style: none;
+
+color: #fff;
+margin-left:27%;
+background: #0C3559;
+border-radius: 16px;
+display: block;
+  }
+  .bio-forms form input[type="button"] {
+background-color:  #3ad1f7;;
+color: #f9fbfc;
+width:100px;
+
+font-size:medium;
+height:35px;
+border-radius:7px;
+border-style: none;
+
+
+  }
+  .Geno
+  {
+    
+    justify-content: center;
+    display: flex;
+   background-image: url('madia/Pink\ and\ Brown\ Minimalist\ Beauty\ Salon\ &\ Spa\ Presentation\ \(21\).png');
+    width: 95%;
+    margin-left:2.5%;
+    border: 5px solid #0194ae;
+    background-size: cover;
+    border-style:inset;
+    padding-bottom:100px;
+    border-radius:10px ;
+  }
+  
+  .geno-choose{
+    background-color:#0097b2c0;
+    color: white;
+
+    border-radius:20px;
+    height:50px;
+    padding:5px;
+    padding-bottom:8px;
+    padding-left:13px;
+    padding-right:13px;
+    margin-top:10%;
+    justify-content: space-between;
+    display: flex;
+    width:250px;
+    margin-right:40%;
+
+
+  }
+  .geno-choose a{
+text-transform: capitalize;
+padding:5%;
+color: #fff;
+
+  }
+  .geno-choose a:hover{
+    text-transform: capitalize;
+    color: #fff;
+    border-radius:3px;
+    border-bottom:4px solid white;
+    transition:0.3s;
+
+    
+    
+      }
+
+
+
+     #insert_choose{
+        border-bottom:4px solid white;
+        border-radius:3px;
+
+      }
+      
+     #update_choose{
+      border-bottom:4px  white;
+      border-radius:3px;
+
+    }
+    
+    #delete_choose{
+      border-bottom:4px  white;
+      border-radius:3px;
+
+    }
+.Geno   form {
+position: relative;
+  margin-top:10%;
+      }
+
+.Geno form input[type="text"]{
+
+  display: flex;
+  padding-left:15px;
+  justify-content: left;
+  width:300px;
+  padding-right:15px;
+  
+  height:30px;
+  border: 2px solid #0194ae;
+  border-radius:12px;
+
+  
+}
+.Geno form input[type="number"]{
+
+  display: flex;
+  justify-content: left;
+  padding-left:15px;
+  padding-right:15px;
+  width:300px;
+  height:30px;
+  border: 2px solid #0194ae;
+  border-radius:12px;
+
+  
+}
+.Geno  form input[type="submit"]{
+
+  width: 120px;
+  height:34px;
+  margin-left:31%;
+  margin-top:9%;
+  color: #fff;
+  background-color: #0194ae;
+  border-radius:15px;
+  border-style: none;
+}
+.Geno  form input:hover[type="submit"]{
+  border: 2px solid #0194ae;
+  border-style: solid;
+  width: 120px;
+  height:34px;
+  margin-left:31%;
+  margin-top:9%;
+  color: #47a8f7;
+  background-color: #ffffff;
+  border-radius:15px;
+transition: 0.2s;
+}
+.Geno  form textarea{
+
+  display: flex;
+  justify-content: left;
+  max-width:300px;
+  padding-top:10px;
+  padding-left:15px;
+  padding-right:15px;
+  border: 2px solid #0194ae;
+  height:200px;
+  border-radius:20px;
+  min-width:300px;
+ 
+}
+.Geno   form textarea:hover{
+
+  display: flex;
+  justify-content: left;
+  min-width:300px;
+  max-width:300px;
+  border: 1px solid #0194ae;
+  height:200px;
+  border-radius:20px;
+  
+}
+.Geno  form label{
+  
+  display: block;
+  margin-top:4%;
+  padding:10px;
+}
+  #update{
+    display: none;
+ 
+  }
+  #delete{
+    display: none;
+  }
+  @media screen and (max-width:600px){
+  
+    .members-container{
+      background-image: url('/madia/');
+      }
+    
+
+  .members-container h1{
+    font-size:80px;
+  }
+  
+  }
+  @media screen and (min-width:768px){
+  .members-container{
+  padding:1em 7em;
+
+  
+    
+  }
+  }
+  
+  
+    @media screen and (min-width:1000px){
+  .members-container{
+  background-color: transparent;
+background-image:transparent;
+    padding:1em;
+    margin-left:-10px;
+    
+
+  }
+
+  .coll{
+  flex: 0 0 30%;
+  max-width:40.33%;
+
+    padding: 0 1em 1em 1em;
+    background-color:transparent;
+    border-radius:5%;
+  
+
+  }
+  .row{
+    padding-left:30vh;
+    background-color:transparent;
+
+
+    
+  }
+  .row h2{
+  margin-right:120px;
+  }    
+  }
+  
